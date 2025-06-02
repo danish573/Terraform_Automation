@@ -14,7 +14,6 @@ pipeline{
         stage("terraform plan"){
             steps{
                 sh ("terraform plan")
-                sh 'terraform plan -no-color -input=false -out=tfplan -lock=false'
             }
         }
         stage("action"){
