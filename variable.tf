@@ -20,7 +20,7 @@ variable "tags" {
   type = map
   description = "(optional) Mapping tag to assign a bucket"
   default = {
-    environmet = "Dev"
+    environment = "Dev"
     terraform = "true"
   }
 }
