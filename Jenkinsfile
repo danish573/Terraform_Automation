@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("cloning github repo"){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/danish573/Terrafrom_auotmation.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/danish573/Terraform_Automation.git']])
             }
         }
         stage("terraform init"){
