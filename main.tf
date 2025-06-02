@@ -1,5 +1,9 @@
 // Assign AWS Region to Create Things
 
+resource "random_id" "suffix" {
+  byte_length = 2
+}
+
 provider "aws" {
   region = var.aws_region
 }
@@ -16,7 +20,7 @@ resource "aws_vpc" "main" {
 
 // Create Security Group with Firewall
 
-resource "aws_security_group" "jenkin-sg" {
+resource "aws_security_group" "jenkins-sg" {
   name = var.security_group
   description = "Security group for EC-2 instance"
 
