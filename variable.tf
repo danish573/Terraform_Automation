@@ -32,7 +32,7 @@ variable "aws_region" {
 
 variable "security_group" {
   description = "Name of security group"
-  default = "jenkins-sgroup"
+  default = "jenkin-sgroup"
 }
 
 variable "ami_id" {
