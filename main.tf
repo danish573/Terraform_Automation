@@ -16,7 +16,7 @@ resource "aws_vpc" "main" {
 
 // Create Security Group with Firewall
 
-resource "aws_security_group" "jenkins-sg" {
+resource "aws_security_group" "jenkin-sg" {
   name = var.security_group
   description = "Security group for EC-2 instance"
 
